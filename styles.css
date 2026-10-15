@@ -3,7 +3,7 @@
 :root {
     --text: #1A237E;
     --text-muted: #5C6BC0;
-    --accent: #2563eb;
+    --accent: #EA2563;
     --background: #ffffff;
     --border: #e5e7eb;
 }
@@ -29,3 +29,12 @@ h2 {
 }
 
 footer { margin-top: 4rem; color: var(--text-muted); font-size: 0.9rem; }
+
+/* Lab 11: Task 4: Links */
+a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+}
+
+a:hover { border-bottom-color: var(--accent); }
