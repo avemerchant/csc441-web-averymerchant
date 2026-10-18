@@ -1,0 +1,2 @@
+## Week 8, Friday
+On the phone, I didn't like that my picture was still showing up next to my name so I changed it using flex-wrap: wrap. I also changed the gap between my picture and name to be 1rem instead of 1.5rem because I felt that they were too far apart. 
