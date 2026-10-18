@@ -40,7 +40,17 @@ p {
     margin-bottom: 1rem;
 }
 
-footer { margin-top: 4rem; color: var(--text-muted); font-size: 0.9rem; }
+/* Lab 12: Task 3: Footer */
+footer { 
+    border-top: 1px solid var(--border);
+    padding-top: 1.5rem;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4rem; 
+    color: var(--text-muted); 
+    font-size: 0.9rem; 
+}
 
 /* Lab 11: Task 4: Links */
 a {
@@ -62,10 +72,24 @@ section {
     margin-bottom: 3rem;
 }
 
+/* Lab 12: Task 2: List without bullets */
 ul {
+    list-style: none;
     padding-left: 1.25rem;
 }
 
 li {
     margin-bottom: 0.5rem;
+    padding-left: 1rem;
+    border-left: 2px solid var(--accent)
+}
+
+/* Lab 12: Task 1: Header side by side */
+header {
+    /* Lab 12: Task 4: Let the header stack when there isn't room */
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    /* Lab 12: Task 4: Changing the gap */
+    gap: 1rem;
 }
