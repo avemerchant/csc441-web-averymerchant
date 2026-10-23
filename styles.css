@@ -22,6 +22,7 @@ h1 {
     font-size: 3rem; /* Class 12: Step 2: My own scale */
     line-height: 2;
     margin-bottom: 0.25rem; 
+    margin-top: -1rem;
 }
 
 header p { color: var(--text-muted); font-size: 1.1rem; margin-top: 0; }
@@ -66,6 +67,7 @@ a:hover { border-bottom-color: var(--accent); }
     height: 180px;
     object-fit: cover;
     border-radius: 50%;
+    margin-top: 0.5rem;
 }
 
 section {
@@ -92,4 +94,40 @@ header {
     align-items: center;
     /* Lab 12: Task 4: Changing the gap */
     gap: 1rem;
+}
+
+/* Lab 13: Task 4: Separate the bar from the header */
+nav {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Lab 13: Step 3: The nav bar */
+nav a {
+    text-decoration: none;
+    font-weight: 700;
+    padding-bottom: 0.25rem;
+    border-bottom: 2px solid transparent;
+}
+
+nav a:hover {
+    border-bottom-color: var(--accent);
+}
+
+/* Lab 13: Task 1: Which page am I on */
+nav a.current {
+    border-bottom-color: var(--accent);
+    color: var(--accent);
+}
+
+nav ul{
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    padding-left: 0;
 }
