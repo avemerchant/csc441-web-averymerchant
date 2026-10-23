@@ -1,2 +1,7 @@
 ## Week 8, Friday
 On the phone, I didn't like that my picture was still showing up next to my name so I changed it using flex-wrap: wrap. I also changed the gap between my picture and name to be 1rem instead of 1.5rem because I felt that they were too far apart. 
+
+## Week 9, Wednesday
+1. My three pages are my intro page, my projects page, and my relevant coursework page. Since I'm graduating this year, I would really like for this website to be basically a second resume for me. I think it will look really good on my resume and it also gives me an area to expand on my projects and my relevant coursework. When I find the time, I'll add more projects with Github links so that anyone can have direct access to the repo that contains that project. I'll also expand on my relevant coursework more when I have the time to do so.
+2. If there were three different css files for each page, I would've had to change each one to be the same in order for my pages to be different. 
+3. I'm confused as to why the h1 text appears next to my picture in the home page but only appears below the picture on both of my other pages. I don't necessarily think I want the same picture on each page, but I would like to now how to get it so that h1 appears next to the picture on every page. 
