@@ -96,6 +96,17 @@ header {
     gap: 1rem;
 }
 
+/* Lab 13: Task 4: Separate the bar from the header */
+nav {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 /* Lab 13: Step 3: The nav bar */
 nav a {
     text-decoration: none;
@@ -106,4 +117,17 @@ nav a {
 
 nav a:hover {
     border-bottom-color: var(--accent);
+}
+
+/* Lab 13: Task 1: Which page am I on */
+nav a.current {
+    border-bottom-color: var(--accent);
+    color: var(--accent);
+}
+
+nav ul{
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    padding-left: 0;
 }
