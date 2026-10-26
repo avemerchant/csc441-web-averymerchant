@@ -149,6 +149,12 @@ nav ul {
     flex-direction: column;
 }
 
+@media (min-width: 31rem) {
+    nav ul{
+        flex-direction: row;
+    }
+}
+
 /* Class 14: Step 2: The cards go in a row */
 /* Class 14: Step 3: Stack by default */
 /* Class 14: Step 5: Break my own page */
