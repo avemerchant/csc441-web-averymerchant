@@ -60,6 +60,10 @@ footer {
     padding-top: 1.5rem;
 }
 
+footer ul {
+    flex-direction: column;
+}
+
 @media (min-width: 43rem) {
     footer { 
         flex-direction: row; 
@@ -178,4 +182,12 @@ nav ul {
     .cards {
         flex-direction: row;
     }
+}
+
+body.dark {
+    --text: white;
+    --text-muted: silver;
+    --accent: #EA2563;
+    --background: black;
+    --border: dimgray;
 }
