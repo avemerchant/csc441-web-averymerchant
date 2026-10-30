@@ -10,6 +10,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles.css">
+        <!-- Lab 15: Task 1: My third file -->
+        <script src="script.js" defer></script>
     </head>
 
     <body>
@@ -20,6 +22,8 @@
                 <a href="index.html">Home</a>
                 <a href="projects.html" class="current">Projects</a>
                 <a href="relevantwork.html">Relevant Coursework</a>
+                <!-- Lab 15: Task 1: The theme button -->
+                <button id="theme-toggle" type="button">Dark</button>
             </ul>
          </nav>
         <!--Class 11: Step 2: The page-->
@@ -55,9 +59,17 @@
         </main>
          <!-- Lab 12: Task 3: Two things in the footer-->
         <footer>
-            <p>&copy; 2026 Avery Merchant</p>
-            <!-- Lab 11: Task 3: A link off your page-->
-            <a href="https://github.com/avemerchant" target="_blank" rel="noopener">GitHub</a>
+            <ul>
+                <!-- Lab 15: Task 5: A back-to-top button -->
+                <button id="back-to-top" type="button">Back to Top</button>
+                <!-- Class 15: Step 2: The year, written by JavaScript -->
+                <p>&copy; <span id="year"></span> Avery Merchant</p>
+            </ul>
+            <ul>
+                <p> </p>
+                <!-- Lab 11: Task 3: A link off your page-->
+                <a href="https://github.com/avemerchant" target="_blank" rel="noopener">GitHub</a>
+            </ul>
         </footer>
     </body>
 </html>
