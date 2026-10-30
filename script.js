@@ -7,7 +7,7 @@ const yearSpan = document.querySelector("#year");
 // Lab 15: Task 2: Make each piece stand on its own
 if (yearSpan) {
     yearSpan.textContent = new Date().getFullYear();
-}
+};
 
 // Class 15: Step 3: A button that changes the page
 const themeButton = document.querySelector("#theme-toggle");
@@ -35,7 +35,7 @@ if (themeButton) {
         localStorage.setItem("theme", "light");
         }
     });
-}
+};
 
 const backToTopButton = document.querySelector("#back-to-top");
 
@@ -43,4 +43,22 @@ if (backToTopButton) {
     backToTopButton.addEventListener("click", function () {
         window.scrollTo({ top: 0, behavior: "smooth" });
     });
+};
+
+// Class 16: Step 4: Handle the submit
+const contactForm = document.querySelector("#contact-form");
+
+// Class 16: Step 4: Handle the submit
+if (contactForm) {
+    contactForm.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const name = document.querySelector("#name").value;
+
+    formStatus.textContent = "Thanks, " + name + "! Your message has been sent.";
+    contactForm.reset();
+    });
 }
+
+const formStatus = document.querySelector("#form-status");
+

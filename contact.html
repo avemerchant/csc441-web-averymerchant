@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Class 16: Step 1: My contact page -->
+        <title>Contact - Avery Merchant</title>
+        <!-- Class 12: Step 1: A typeface I choose -->
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        <!-- Class 15: Step 1: My third file -->
+        <script src="script.js" defer></script>
+    </head>
+
+    <body>
+        <!-- Class 13: Step 2: Navigation -->
+         <nav>
+            <a href="index.html">Avery Merchant</a>
+            <ul>
+                <a href="index.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="relevantwork.html">Relevant Coursework</a>
+                <!-- Class 16: Step 1: The contact link -->
+                <a href="contact.html" class="current">Contact</a>
+                <!-- Class 15: Step 3: The theme button -->
+                <button id="theme-toggle" type="button">Dark</button>
+            </ul>
+         </nav>
+        <!--Class 11: Step 2: The page-->
+        <header>
+            <!-- Class 12: Step 3: An image -->
+            <img src="images/me.jpeg" alt="Picture of Avery Merchant" class="portrait">
+            <div>
+                <h1>Contact</h1>
+                <p>Questions about my projects or work?</p>
+            </div>
+            
+        </header>
+
+        <main>
+            <!-- Class 16: Step 2: A form -->
+             <form id="contact-form">
+                <p>
+                    <label for="name">Your Name</label>
+                    <input id="name" name="name" input_type="text" required>
+                </p>
+                <p>
+                    <label for="email">Your Email</label>
+                    <input id="email" name="email" input_type="email" required>
+                </p>
+                <p>
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </p>
+                <button type="submit">Send</button>
+             </form>
+
+             <p id="form-status" role="status"></p>
+        </main>
+         <!-- Lab 12: Task 3: Two things in the footer-->
+        <footer>
+            <ul>
+                <!-- Lab 15: Task 5: A back-to-top button -->
+                <button id="back-to-top" type="button">Back to Top</button>
+                <!-- Class 15: Step 2: The year, written by JavaScript -->
+                <p>&copy; <span id="year"></span> Avery Merchant</p>
+            </ul>
+            <ul>
+                <p> </p>
+                <!-- Lab 11: Task 3: A link off your page-->
+                <a href="https://github.com/avemerchant" target="_blank" rel="noopener">GitHub</a>
+            </ul>
+        </footer>
+    </body>
+</html>

@@ -1,11 +1,15 @@
-/* Class 11: Step 4: The basics */
+/* Class 16: Step 3: Padding counts inside width, not on top of it */
+* {
+    box-sizing: border-box
+}
 
+/* Class 11: Step 4: The basics */
 :root {
     --text: #1A237E;
     --text-muted: #5C6BC0;
     --accent: #EA2563;
     --background: #ffffff;
-    --border: #e5e7eb;
+    --border: #abacac;
 }
 
 body {
@@ -190,4 +194,43 @@ body.dark {
     --accent: #EA2563;
     --background: black;
     --border: dimgray;
+}
+
+/* Class 16: Step 3: The form */
+form label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+
+form input, form textarea {
+    font: inherit;
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--background);
+    color: var(--text);
+}
+
+form input:focus, form textarea:focus {
+    border-color: var(--accent);
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+}
+
+form button {
+    font: inherit;
+    font-weight: 700;
+    color: var(--background);
+    background: var(--accent);
+    border: none;
+    border-radius: 6px;
+    padding: 0.6rem 1.4rem;
+    cursor: pointer;
+}
+
+#form-status {
+    font-weight: 500;
+    color: var(--accent);
 }
