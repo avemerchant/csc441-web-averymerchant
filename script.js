@@ -50,15 +50,50 @@ const contactForm = document.querySelector("#contact-form");
 
 // Class 16: Step 4: Handle the submit
 if (contactForm) {
+    const formStatus = document.querySelector("#form-status");
+
+    // Lab 16: Task 1: My own check before accepting it
     contactForm.addEventListener("submit", function(event) {
-    event.preventDefault();
+        event.preventDefault();
 
-    const name = document.querySelector("#name").value;
+        const name = document.querySelector("#name").value;
+        const message = document.querySelector("#message").value;
 
-    formStatus.textContent = "Thanks, " + name + "! Your message has been sent.";
-    contactForm.reset();
+        if (message.length < 10) {
+            formStatus.textContent = "Please write at least 10 characters in your message.";
+            formStatus.classList.add("error");
+            return;
+        }
+    
+        // Lab 16: Task 4: A rule of my own
+        const maxCharacters = document.querySelector("#message").getAttribute("maxlength");
+        
+        if (message.length > maxCharacters) {
+            formStatus.textContent = "Your message is too long. Please keep it under " + maxCharacters + " characters.";
+            formStatus.classList.add("error");
+            return;
+        }
+
+        formStatus.classList.remove("error");
+        formStatus.textContent = "Thanks, " + name + "! Your message has been sent.";
+        contactForm.reset();
+    });
+
+    // Lab 16: Task 2: Clear the error once they start fixing it
+    contactForm.addEventListener("input", function() {
+        if (formStatus.classList.contains("error")) {
+            formStatus.textContent = "";
+            formStatus.classList.remove("error");
+        }
     });
 }
 
-const formStatus = document.querySelector("#form-status");
+// Lab 16: Tasl 4: One thing of my own
+const message = document.querySelector("#message");
+const currentCount = document.querySelector("#current-count");
 
+if (currentCount) {
+    message.addEventListener("input", function() {
+        currentCount.textContent = message.value.length;
+    });
+}

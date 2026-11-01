@@ -10,6 +10,7 @@
     --accent: #EA2563;
     --background: #ffffff;
     --border: #abacac;
+    --error: crimson;
 }
 
 body {
@@ -38,6 +39,18 @@ header p {
     flex-wrap: wrap;
 }
 
+nav button {
+    font: inherit;
+    font-weight: 500;
+    color: var(--background);
+    background: var(--accent);
+    border: none;
+    border-radius: 4px;
+    padding: 0.2rem 1rem;
+    cursor: pointer;
+}
+
+
 h2 {
     font-size: 1.75rem; /* Class 12: Step 2 */
     line-height: 1.2; /* Class 12: Step 2 */
@@ -58,20 +71,34 @@ footer {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    gap: 0.5rem;
     align-items: center;
+    justify-content: center;
     border-top: 1px solid var(--border);
     padding-top: 1.5rem;
 }
 
 footer ul {
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+}
+
+footer button {
+    font: inherit;
+    font-weight: 700;
+    color: var(--background);
+    background: var(--accent);
+    border: none;
+    border-radius: 6px;
+    padding: 0.6rem 1.4rem;
+    cursor: pointer;
 }
 
 @media (min-width: 43rem) {
     footer { 
         flex-direction: row; 
         justify-content: space-between;
+        align-items: center;
     }
 }
 
@@ -157,7 +184,7 @@ nav ul {
     flex-direction: column;
 }
 
-@media (min-width: 31rem) {
+@media (min-width: 33rem) {
     nav ul{
         flex-direction: row;
     }
@@ -194,6 +221,7 @@ body.dark {
     --accent: #EA2563;
     --background: black;
     --border: dimgray;
+    --error: lightsalmon;
 }
 
 /* Class 16: Step 3: The form */
@@ -233,4 +261,9 @@ form button {
 #form-status {
     font-weight: 500;
     color: var(--accent);
+}
+
+/* Lab 16: Task 2: The error state */
+#form-status.error {
+    color: var(--error);
 }
