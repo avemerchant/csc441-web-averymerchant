@@ -20,3 +20,18 @@ I also made a media query for my navigation ul because I want the navigation to 
 3. It worked because CSS variables store colors globally. Without variables we would have to write override rules for every element, class, and ID across the whole stylesheet; we would have a lot of repetitive code. 
 4. I accidentally put the task 3 work outside of themeButton.addEventListener. I was expecting the button text to change every time I pressed it and instead it wasn't. I noticed rather quickly what was wrong when I compared my code to the code in the lab 15 document. I also knew that that code had to be the issue because I was expecting something very specific to happen and it wasn't happening, so I knew where the mistake was in the code right after figuring out it wasn't working. 
 5. When my screen is the full width of my computer (on my Relevant Coursework page), there are 4 cards in a row and two below it in a separate row. I don't like how it looks with the different widths of cards. Is there a way to set the maximum number of cards in a single row? I would like it so that the maximum number of cards in a single row is only 3 cards. I think it would look better overall, since I have 6 cards in that section. Right now it looks messy. 
+
+## Week 10, Friday
+1. It prevents the browser's default behavior which would be reloading the page. Without it, the page would reload after the user presses the submit button. 
+2. The js code attempts to access a property or method on a variable that evaluates to null because it didn't find the element in the HTML (like the form on the home page). An if statement fixed it because the js code looked to see if that variable was present before attempting to run any methods on it. 
+3. I added a live character counter. I thought it would be useful to have a maximum character limit and for there to be a max character limit, the user would have to know how many characters they've typed. I made my maximum 500 characters and I added this to my js file: 
+const maxCharacters = document.querySelector("#message").getAttribute("maxlength");
+        
+        if (message.length > maxCharacters) {
+            formStatus.textContent = "Your message is too long. Please keep it under " + maxCharacters + " characters.";
+            formStatus.classList.add("error");
+            return;
+        }
+4. I changed the min-width on my media query for my nav. The addition of the dark/light button made it look a little weird. My "Relevant Coursework" title was becoming two lines (stacked) which made the line under the current screen look weird and the button became rather large. I found this in the responsive view, not the phone view. I changed the min width to be 33rem. 
+Also, while I was looking in phone view, I realized that I didn't like the way my footer looked. The back-to-top button wasn't center in the ul and I thought it looked strange so I added display: flex which made the button fill out the space. 
+5. The form is missing a route. We haven't attached an email to it or anything so it has no where to go. 
