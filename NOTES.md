@@ -35,3 +35,10 @@ const maxCharacters = document.querySelector("#message").getAttribute("maxlength
 4. I changed the min-width on my media query for my nav. The addition of the dark/light button made it look a little weird. My "Relevant Coursework" title was becoming two lines (stacked) which made the line under the current screen look weird and the button became rather large. I found this in the responsive view, not the phone view. I changed the min width to be 33rem. 
 Also, while I was looking in phone view, I realized that I didn't like the way my footer looked. The back-to-top button wasn't center in the ul and I thought it looked strange so I added display: flex which made the button fill out the space. 
 5. The form is missing a route. We haven't attached an email to it or anything so it has no where to go. 
+
+## Week 11, Wednesday
+Live site: https://averymerchant.netlify.app/
+1. Github stores code files on the internet. It keeps a history of every change a user makes. Netlify connects directly to the code that is on Github. Netlify builds the live site and handles features like the domain.
+2. Netlify is watching the release branch. If Netlify was watching the development branch then every merge would publish instantly and the release branch would just be decoration. The whole point is that one branch is public and the other is not.
+3. That lock means the connection between a user and the server is encrypted. 
+4. No
