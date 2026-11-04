@@ -37,5 +37,8 @@ Also, while I was looking in phone view, I realized that I didn't like the way m
 5. The form is missing a route. We haven't attached an email to it or anything so it has no where to go. 
 
 ## Week 11, Wednesday
- Live site: https://averymerchant.netlify.app/
- 
+Live site: https://averymerchant.netlify.app/
+1. Github stores code files on the internet. It keeps a history of every change a user makes. Netlify connects directly to the code that is on Github. Netlify builds the live site and handles features like the domain.
+2. Netlify is watching the release branch. If Netlify was watching the development branch then every merge would publish instantly and the release branch would just be decoration. The whole point is that one branch is public and the other is not.
+3. That lock means the connection between a user and the server is encrypted. 
+4. No

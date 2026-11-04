@@ -66,7 +66,7 @@ if (contactForm) {
         }
     
         // Lab 16: Task 4: A rule of my own
-        const maxCharacters = document.querySelector("#message").getAttribute("maxlength");
+        const maxCharacters = document.querySelector("#message").getAttribute("max-count");
         
         if (message.length > maxCharacters) {
             formStatus.textContent = "Your message is too long. Please keep it under " + maxCharacters + " characters.";
