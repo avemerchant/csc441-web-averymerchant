@@ -57,7 +57,8 @@ if (contactForm) {
         event.preventDefault();
 
         const name = document.querySelector("#name").value;
-        const message = document.querySelector("#message").value;
+        const messageInput = document.querySelector("#message");
+        const message = messageInput.value;
 
         if (message.length < 10) {
             formStatus.textContent = "Please write at least 10 characters in your message.";
@@ -66,7 +67,8 @@ if (contactForm) {
         }
     
         // Lab 16: Task 4: A rule of my own
-        const maxCharacters = document.querySelector("#message").getAttribute("max-count");
+        // Hardcoding the max character limit to 500 for the message
+        const maxCharacters = 500;
         
         if (message.length > maxCharacters) {
             formStatus.textContent = "Your message is too long. Please keep it under " + maxCharacters + " characters.";
@@ -77,6 +79,11 @@ if (contactForm) {
         formStatus.classList.remove("error");
         formStatus.textContent = "Thanks, " + name + "! Your message has been sent.";
         contactForm.reset();
+
+        const currentCount = document.querySelector("#current-count");
+        if (currentCount) {
+            currentCount.textContent = "0";
+        }
     });
 
     // Lab 16: Task 2: Clear the error once they start fixing it
@@ -88,11 +95,12 @@ if (contactForm) {
     });
 }
 
-// Lab 16: Tasl 4: One thing of my own
 const message = document.querySelector("#message");
 const currentCount = document.querySelector("#current-count");
 
-if (currentCount) {
+if (message && currentCount) {
+    currentCount.textContent = message.value.length;
+
     message.addEventListener("input", function() {
         currentCount.textContent = message.value.length;
     });
