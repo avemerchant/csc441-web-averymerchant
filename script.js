@@ -67,7 +67,7 @@ if (contactForm) {
         }
     
         // Lab 16: Task 4: A rule of my own
-        // Hardcoding the max character limit to 500 for the message
+        // Hardcoding the max characters to 500
         const maxCharacters = 500;
         
         if (message.length > maxCharacters) {
