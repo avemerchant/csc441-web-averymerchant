@@ -78,7 +78,7 @@ if (contactForm) {
 
         formStatus.classList.remove("error");
         formStatus.textContent = "Thanks, " + name + "! Your message has been sent.";
-        contactForm.reset();
+        contactForm.submit();
 
         const currentCount = document.querySelector("#current-count");
         if (currentCount) {
