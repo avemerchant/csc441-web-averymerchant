@@ -83,7 +83,7 @@ if (contactForm) {
         const currentCount = document.querySelector("#current-count");
         if (currentCount) {
             currentCount.textContent = "0";
-        }   
+        }
     });
 
     // Lab 16: Task 2: Clear the error once they start fixing it
@@ -95,13 +95,12 @@ if (contactForm) {
     });
 }
 
-// Lab 16: Tasl 4: One thing of my own
 const message = document.querySelector("#message");
 const currentCount = document.querySelector("#current-count");
 
-if (currentCount && message) {
+if (message && currentCount) {
     currentCount.textContent = message.value.length;
-    
+
     message.addEventListener("input", function() {
         currentCount.textContent = message.value.length;
     });
