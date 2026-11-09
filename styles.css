@@ -67,20 +67,26 @@ p {
 
 /* Lab 12: Task 3: Footer */
 /* Lab 14: Task 4: Foot stacks on narrow screens */
+/* Lab 18: Task 6: A fix */
 footer { 
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    border-top: 1px solid var(--border);
-    padding-top: 1.5rem;
+    text-align: center;
+    width: 100%;
+    padding: 20px 0;
 }
 
 footer ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 footer button {
