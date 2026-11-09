@@ -42,3 +42,12 @@ Live site: https://averymerchant.netlify.app/
 2. Netlify is watching the release branch. If Netlify was watching the development branch then every merge would publish instantly and the release branch would just be decoration. The whole point is that one branch is public and the other is not.
 3. That lock means the connection between a user and the server is encrypted. 
 4. No
+
+## Week 11, Friday
+1. It's a input place on the form that users can't see but automated bots would fill out immediately. The contact form will not be submitted if the invisible form input is filled in. It's better than asking people to prove they are human because then the actual human's don't have to waste time completing another question like a captcha. 
+2. A Deploy Preview is a temporary live URL that is created for a pull request. It allows us to test and review the changes before they go live in the release. 
+3. I fixed the email field type; I messed it up in a previous session so I had to fix it so that a phone keyboard would come up with @ to make the user's experience easier. 
+I also made a change to my footer. On my phone, the details in the footer weren't centered on my screen, so I fixed that. 
+4. I merge the changes from a local branch to my main branch, development. After that, I merge it to the release branch which is the branch that Netlify looks at. Netlify then deploys it to the public web address. 
+5. Netlify points to my custom domain and the .netlify.app subdomain. Both of these domains have the exact same files attached, because Netlify looks to the release branch and deploys the code there to both domains. 
+6. I want my nav to be a dropdown menu when it's being viewed on a phone. I don't particularly like the way it looks on a phone (or smaller screen) right now. I don't know if there's a way to do that because I would assume the dropdown menu code wouldn't be strictly CSS (for media queries). So, I would think I would need a dropdown menu all the time, which I'm okay with. 
