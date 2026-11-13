@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interests - Avery Merchant</title>
+    <!-- Class 12: Step 1: A typeface I choose -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Class 15: Step 1: My third file -->
+    <script src="script.js" defer></script>
+    <!-- Class 20: Step 2: API connection, then API page -->
+    <script src="interests.js" defer></script>
+    <script src="config.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Class 13: Step 2: Navigation -->
+    <nav>
+      <a href="index.html">Avery Merchant</a>
+      <ul>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="relevantwork.html">Relevant Coursework</a>
+        <a href="interests.html" class="current">Interests</a>
+        <!-- Class 16: Step 1: The contact link -->
+        <a href="contact.html">Contact</a>
+        <!-- Class 15: Step 3: The theme button -->
+        <button id="theme-toggle" type="button">Dark</button>
+      </ul>
+    </nav>
+    <!--Class 11: Step 2: The page-->
+    <header>
+      <!-- Class 12: Step 3: An image -->
+      <img
+        src="images/me.jpeg"
+        alt="Picture of Avery Merchant"
+        class="portrait"
+      />
+      <div>
+        <h1>My Interests</h1>
+        <!-- Lab 17 · Task 3: something I can see -->
+        <p>Website Live on November 4, 2026</p>
+        <p>All of the crafts and hobbies I enjoy.</p>
+      </div>
+    </header>
+
+    <main>
+      <!-- Class 20: Step 1: Add inside the existing <main> on interests.html -->
+      <section class="interests-section">
+        <h2>My Interests</h2>
+        <p>These items come from my Supabase database.</p>
+        <p id="showcase-status" role="status">Waiting to load...</p>
+        <p id="showcase-count"></p>
+        <div id="showcase-grid" class="showcase-grid"></div>
+      </section>
+    </main>
+    <!-- Lab 12: Task 3: Two things in the footer-->
+    <footer>
+      <ul>
+        <!-- Lab 15: Task 5: A back-to-top button -->
+        <button id="back-to-top" type="button">Back to Top</button>
+        <!-- Class 15: Step 2: The year, written by JavaScript -->
+        <p>&copy; <span id="year"></span> Avery Merchant</p>
+      </ul>
+      <ul>
+        <p></p>
+        <!-- Lab 11: Task 3: A link off your page-->
+        <a href="https://github.com/avemerchant" target="_blank" rel="noopener"
+          >GitHub</a
+        >
+      </ul>
+    </footer>
+  </body>
+</html>
