@@ -51,3 +51,10 @@ I also made a change to my footer. On my phone, the details in the footer weren'
 4. I merge the changes from a local branch to my main branch, development. After that, I merge it to the release branch which is the branch that Netlify looks at. Netlify then deploys it to the public web address. 
 5. Netlify points to my custom domain and the .netlify.app subdomain. Both of these domains have the exact same files attached, because Netlify looks to the release branch and deploys the code there to both domains. 
 6. I want my nav to be a dropdown menu when it's being viewed on a phone. I don't particularly like the way it looks on a phone (or smaller screen) right now. I don't know if there's a way to do that because I would assume the dropdown menu code wouldn't be strictly CSS (for media queries). So, I would think I would need a dropdown menu all the time, which I'm okay with. 
+
+## Week 12, Wednesday
+1. A database table stores structured data. The rows are individual records and the columns represent the data for those records.
+2. A table is a storage structure inside the database. An API Endpoint is a URL route where an API receives requests and sends back a response. 
+3. A GET retrieves data from a server. The format is JSON; it's structured as an array. 
+4. The publishable key is intended for browser and mobile use. Secret keys are intended for private servers and must be hidden. 
+5. When we used select=title,category, the output contained all 5 objects but each only had 2 fields (title and category). 

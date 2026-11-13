@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "Scrapbooking",
+    "description": "Organizing pages with pictures, stickers, and writing. ",
+    "category": "Craft",
+    "image_url": "https://images.unsplash.com/photo-1781445561924-416a43d56adb?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+    "created_at": "2026-11-11T22:45:48.170405+00:00"
+  },
+  {
+    "id": 2,
+    "title": "Painting",
+    "description": "The visual art of applying color and other medium to a canvas with brushes or sponges.",
+    "category": "Art",
+    "image_url": "https://plus.unsplash.com/premium_photo-1678812165213-12dc8d1f3e19?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+    "created_at": "2026-11-11T22:45:48.170405+00:00"
+  },
+  {
+    "id": 3,
+    "title": "Reading",
+    "description": "Consuming novels and books.",
+    "category": "Hobby",
+    "image_url": "https://images.unsplash.com/photo-1491309055486-24ae511c15c7?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+    "created_at": "2026-11-11T22:45:48.170405+00:00"
+  },
+  {
+    "id": 4,
+    "title": "Hiking",
+    "description": "Climbing mountains in the Adirondacks. ",
+    "category": "Hobby",
+    "image_url": "https://images.unsplash.com/photo-1501555088652-021faa106b9b?q=80&w=1173&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+    "created_at": "2026-11-12T23:34:24.165506+00:00"
+  },
+  {
+    "id": 5,
+    "title": "Baking",
+    "description": "Creating treats like cookies, cake, brownies, and muffins.",
+    "category": "Hobby",
+    "image_url": "https://images.unsplash.com/photo-1499889808931-317a0255c0e9?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+    "created_at": "2026-11-12T23:36:19.541067+00:00"
+  }
+]
