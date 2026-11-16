@@ -51,3 +51,17 @@ I also made a change to my footer. On my phone, the details in the footer weren'
 4. I merge the changes from a local branch to my main branch, development. After that, I merge it to the release branch which is the branch that Netlify looks at. Netlify then deploys it to the public web address. 
 5. Netlify points to my custom domain and the .netlify.app subdomain. Both of these domains have the exact same files attached, because Netlify looks to the release branch and deploys the code there to both domains. 
 6. I want my nav to be a dropdown menu when it's being viewed on a phone. I don't particularly like the way it looks on a phone (or smaller screen) right now. I don't know if there's a way to do that because I would assume the dropdown menu code wouldn't be strictly CSS (for media queries). So, I would think I would need a dropdown menu all the time, which I'm okay with. 
+
+## Week 12, Wednesday
+1. A database table stores structured data. The rows are individual records and the columns represent the data for those records.
+2. A table is a storage structure inside the database. An API Endpoint is a URL route where an API receives requests and sends back a response. 
+3. A GET retrieves data from a server. The format is JSON; it's structured as an array. 
+4. The publishable key is intended for browser and mobile use. Secret keys are intended for private servers and must be hidden. 
+5. When we used select=title,category, the output contained all 5 objects but each only had 2 fields (title and category). 
+
+## Week 12, Friday
+1. fetch() sends a request to Supabase to ask for data. response.json() takes the data from the server and turns it into a js array that we can use in HTML.
+2. textContent handles plain text. It stops harmful code from getting into the database and running them on my website. innerHTML actually parses HTML, which can be dangersous if the text comes from an outside source. 
+3. The loop that builds the cards won't run, so the grid stays empty and the message tells the user there are no items yet. 
+4. It catches the error in the catch block and displays an error message that explains that the items couldn't be loaded. The try catch allows for the website to remain operable instead of completely crashing.
+5. The <div> is completely empty. The cards only appear because the js file creates them with the createElement() calls after receiving the data from Supabase. 
