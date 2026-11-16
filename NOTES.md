@@ -58,3 +58,10 @@ I also made a change to my footer. On my phone, the details in the footer weren'
 3. A GET retrieves data from a server. The format is JSON; it's structured as an array. 
 4. The publishable key is intended for browser and mobile use. Secret keys are intended for private servers and must be hidden. 
 5. When we used select=title,category, the output contained all 5 objects but each only had 2 fields (title and category). 
+
+## Week 12, Friday
+1. fetch() sends a request to Supabase to ask for data. response.json() takes the data from the server and turns it into a js array that we can use in HTML.
+2. textContent handles plain text. It stops harmful code from getting into the database and running them on my website. innerHTML actually parses HTML, which can be dangersous if the text comes from an outside source. 
+3. The loop that builds the cards won't run, so the grid stays empty and the message tells the user there are no items yet. 
+4. It catches the error in the catch block and displays an error message that explains that the items couldn't be loaded. The try catch allows for the website to remain operable instead of completely crashing.
+5. The <div> is completely empty. The cards only appear because the js file creates them with the createElement() calls after receiving the data from Supabase. 
